@@ -1,9 +1,7 @@
 package com.lucas.db_pedidos.controllers;
 
 import com.lucas.db_pedidos.entities.ItensOrder;
-import com.lucas.db_pedidos.entities.Order;
 import com.lucas.db_pedidos.services.ItensOrderService;
-import com.lucas.db_pedidos.services.OrderService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
