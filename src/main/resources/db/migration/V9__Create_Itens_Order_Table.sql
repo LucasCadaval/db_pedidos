@@ -1,4 +1,5 @@
 CREATE TABLE itens_order (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
     id_order BIGINT NOT NULL,
     id_product BIGINT NOT NULL,
     quantity INTEGER NOT NULL,
