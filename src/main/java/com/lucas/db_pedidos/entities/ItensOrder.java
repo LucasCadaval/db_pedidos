@@ -1,9 +1,15 @@
 package com.lucas.db_pedidos.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Table(name = "itens_order")
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ItensOrder {
 
     @Id
@@ -11,11 +17,11 @@ public class ItensOrder {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "order_id")
+    @JoinColumn(name = "id_order")
     private Order order;
 
     @ManyToOne
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "id_product")
     private Product product;
 
     private int quantity;
